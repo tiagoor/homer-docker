@@ -15,11 +15,11 @@
 # Wait for MySQL
 
 while [[ ! -f "/homer-semaphore/.bootstrapped" ]]; do
-  echo "Kamailio, waiting for MySQL"
+  echo "Kamailio, esperando pelo MySQL"
   sleep 2;
 done
 
-echo "Kamailio container detected MySQL is running & bootstrapped"
+echo "Kamailio container detectado MySQL esta rodando e iniciado"
 
 # Kamailio config
 export PATH_KAMAILIO_CFG=/etc/kamailio/kamailio.cfg
